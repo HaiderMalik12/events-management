@@ -1,0 +1,13 @@
+<template name="participantTile">
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+        <div class="img-box">
+            <img src={{imgUrl}} class="img-responsive">
+            <ul class="text-center">
+                    <a href="{{pathFor 'participantsShow'}}" class="hidden-sm">More details</a>
+            </ul>
+        </div>
+        <h1>{{name}}</h1>
+        <h2>{{category}}</h2>
+        <p>{{desc}}</p>
+    </div>
+</template>

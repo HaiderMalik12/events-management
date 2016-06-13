@@ -1,0 +1,36 @@
+<template name="eventsShow">
+    <div class="container" style="padding-top: 60px">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="{{img}}" alt=""/>
+            </div>
+            <div class="col-md-5">
+                <h1>{{name}}</h1>
+                <span class="lead"><b>Category: </b>{{category}}</span><br> <br>
+                <span class="lead"><b>Start Date: </b>{{formatDate startDate}}</span><br> <br>
+                <span class="lead"><b>End Date: </b>{{formatDate endDate}}</span><br> <br>
+                <p class="lead">{{{desc}}}</p>
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <p>
+                            <a href="{{pathFor 'participateToEvent'}}" class="btn btn-success">
+                                Participate
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--{{#each participants}}-->
+        <!--<div class="col-md-4">-->
+            <!--<img src="{{imgUrl}}" alt=""/>-->
+        <!--</div>-->
+        <!--{{/each}}-->
+    <!--</div>-->
+    {{> participantList}}
+    {{> footer}}
+</template>
